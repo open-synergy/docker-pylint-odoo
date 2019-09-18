@@ -7,9 +7,9 @@
 # Usage:
 
     # must mount the local folder to /apps in container.
-    docker run -ti --rm -v $(pwd):/code osind/pylint-odoo:lates local_file.py
+    docker run -ti --rm -v $(pwd):/code osind/pylint-odoo:latest local_file.py
 
     # run pylint-odoo container as command
-    alias pylint-odoo="docker run -ti --rm -v $(pwd):/code osind/pylint-odoo:tag"
+    alias pylint-odoo="docker run -ti --rm -v $(pwd):/code osind/pylint-odoo:latest"
     pylint-odoo --help
     pylint-odoo local_file.py
