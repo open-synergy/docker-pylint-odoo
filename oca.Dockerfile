@@ -7,12 +7,8 @@ RUN apt-get update \
 
 WORKDIR /code
 
-#RUN wget https://raw.githubusercontent.com/OCA/maintainer-quality-tools/master/travis/cfg/travis_run_pylint.cfg
-
 ADD https://raw.githubusercontent.com/OCA/maintainer-quality-tools/master/travis/cfg/travis_run_pylint.cfg /
 
 ENTRYPOINT ["pylint", "--load-plugins=pylint_odoo", "--rcfile=../travis_run_pylint.cfg"]
 
 CMD ["--help"]
-
-#ENTRYPOINT ["sh"]
