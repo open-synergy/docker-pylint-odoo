@@ -8,6 +8,6 @@ if [ "$version" == latest ]; then
 fi
 
 docker image build \
-    --file "$version.Dockerfile" \
+    --file "$DOCKER_TAG.Dockerfile" \
     --tag "$IMAGE_NAME:$version" \
     .
