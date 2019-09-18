@@ -8,6 +8,7 @@ env:
     matrix:
         - DOCKER_TAG=oca
         - DOCKER_TAG=oca-beta
+        - DOCKER_TAG=latest
 
 script:
     - ./build.sh
