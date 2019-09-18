@@ -5,4 +5,5 @@ version=$DOCKER_TAG
 
 docker image build \
     --file "$version.Dockerfile" \
-    --tag "$IMAGE_NAME:$version"
+    --tag "$IMAGE_NAME:$version" \
+    .
